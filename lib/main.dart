@@ -23,6 +23,12 @@ class HomeActivity extends StatelessWidget{
     backgroundColor: Colors.green,
   );
 
+  MySnackBar(message,context){
+    return ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(message))
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +72,7 @@ class HomeActivity extends StatelessWidget{
           ),
           Padding(
             padding: const EdgeInsets.all(15),
-            child: ElevatedButton(onPressed: (){},child: Text("Submit"), style: buttonStyle,),
+            child: ElevatedButton(onPressed: (){MySnackBar("Submitted", context);},child: Text("Submit"), style: buttonStyle,),
           ),
         ],
       ),
