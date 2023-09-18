@@ -73,7 +73,7 @@ class HomeActivity extends StatelessWidget{
           Padding(
             padding: const EdgeInsets.all(15),
             child: ElevatedButton(onPressed: (){MySnackBar("Submitted", context);},child: Text("Submit"), style: buttonStyle,),
-          ),
+          )
         ],
       ),
     );
