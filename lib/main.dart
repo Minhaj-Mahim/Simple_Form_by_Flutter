@@ -20,6 +20,7 @@ class HomeActivity extends StatelessWidget{
 
   ButtonStyle buttonStyle = ElevatedButton.styleFrom(
     minimumSize: Size(double.infinity, 60),
+    backgroundColor: Colors.green,
   );
 
   @override
@@ -65,7 +66,7 @@ class HomeActivity extends StatelessWidget{
           ),
           Padding(
             padding: const EdgeInsets.all(15),
-            child: ElevatedButton(onPressed: (){},child: Text("Submit"), style: buttonStyle),
+            child: ElevatedButton(onPressed: (){},child: Text("Submit"), style: buttonStyle,),
           ),
         ],
       ),
